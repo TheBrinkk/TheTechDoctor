@@ -45,6 +45,7 @@ It is basically a SDK for creating VMs and etc on the fly but also has its drawb
 
 ## General
 [Remote Desktop Web Client - Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-web-client)
+
 [MarkDown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 
 [How to Migrate QuickBooks to Azure in a Single Afternoon Using Nerdio for Azure Professional](https://getnerdio.com/academy/migrate-quickbooks-to-azure/)
