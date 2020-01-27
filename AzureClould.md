@@ -2,9 +2,9 @@
 
 # Summary
 ## Goal
-> Have a virtual machine/network to remote into. goal is to make dumb terminals that can use the cloud instead of hardware. Quickbooks in the cloud is also another priority. 
+> Have a virtual machine/network to remote into. goal is to leverage the cloud instead of hardware.  
 
-I have seen 2 different options, manually through Microsoft Azure using the portal or can be done programmatically but for such custom solutions i dont see a reason to automate it yet. 
+I have seen 2 different options, manually through Microsoft Azure using the portal or can be done programmatically using Azure Powershell/CLI. 
 
 With Azure, the Azure portal is used manually to create what you need. I am not sure about how the resource management/billing would work out but im sure it would be reported. 
 
@@ -29,13 +29,15 @@ It is basically a SDK for creating VMs and etc on the fly but also has its drawb
 * [Windows Virtual Desktop](https://azure.microsoft.com/en-us/services/virtual-desktop/)
     * [Scale session hosts dynamically (script)](https://docs.microsoft.com/en-us/azure/virtual-desktop/set-up-scaling-script)
     * [Windows Virtual Desktop environment Concepts](https://docs.microsoft.com/en-us/azure/virtual-desktop/environment-setup)
+
 * [VPN Gateway](https://azure.microsoft.com/en-us/services/vpn-gateway/)
     * [Create a Site-to-Site connection in the Azure portal](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal)
     * [VPN Pricing](https://azure.microsoft.com/en-us/pricing/details/vpn-gateway/)
 
 
 
-### Azure Stack
+### Azure Stack ( I dont think we need this)
+
 [Azure Stack](https://azure.microsoft.com/en-us/overview/azure-stack/)
 * [Azure Stack IaaS - Blog Post](https://azure.microsoft.com/en-us/blog/azure-stack-iaas-part-one/)
 * [Tutorial: Offer a service to users](https://docs.microsoft.com/en-us/azure-stack/operator/tutorial-offer-services?view=azs-1910)
