@@ -1,7 +1,7 @@
-# Windows Virtual Desktop
+# Windows Virtual Desktop 
+#### [Product Page](https://azure.microsoft.com/en-us/services/virtual-desktop/)
 
 ## [Documentation](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/)
-
 ## [Azure virtual machine extensions and features](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/overview)
 
 `Azure virtual machine (VM) extensions are small applications that provide post-deployment configuration and automation tasks on Azure VMs. For example, if a virtual machine requires software installation, anti-virus protection, or to run a script inside of it, a VM extension can be used. Azure VM extensions can be run with the Azure CLI, PowerShell, Azure Resource Manager templates, and the Azure portal. Extensions can be bundled with a new VM deployment, or run against any existing system.`
@@ -27,6 +27,9 @@
 * [Sizes for Windows virtual machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes)
 * [General purpose virtual machine sizes](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-general)
 * [Compute optimized virtual machine sizes](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-compute)
+* [Scale session hosts dynamically (script)](https://docs.microsoft.com/en-us/azure/virtual-desktop/set-up-scaling-script)
+* [Windows Virtual Desktop environment Concepts](https://docs.microsoft.com/en-us/azure/virtual-desktop/environment-setup)
+
 
 [Introduction to Azure managed disks](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/managed-disks-overview)
 

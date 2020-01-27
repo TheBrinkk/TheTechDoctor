@@ -26,9 +26,8 @@ It is basically a SDK for creating VMs and etc on the fly but also has its drawb
 * [Virtual Network](https://azure.microsoft.com/en-us/services/virtual-network/)
     * [Virtual Network documentation](https://docs.microsoft.com/en-us/azure/virtual-network/)
     * [Azure-Samples/network-dotnet-manage-virtual-network-with-site-to-site-vpn-connection](https://github.com/Azure-Samples/network-dotnet-manage-virtual-network-with-site-to-site-vpn-connection)
-* [Windows Virtual Desktop](https://azure.microsoft.com/en-us/services/virtual-desktop/)
-    * [Scale session hosts dynamically (script)](https://docs.microsoft.com/en-us/azure/virtual-desktop/set-up-scaling-script)
-    * [Windows Virtual Desktop environment Concepts](https://docs.microsoft.com/en-us/azure/virtual-desktop/environment-setup)
+
+    
 
 * [VPN Gateway](https://azure.microsoft.com/en-us/services/vpn-gateway/)
     * [Create a Site-to-Site connection in the Azure portal](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal)
