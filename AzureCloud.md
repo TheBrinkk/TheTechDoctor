@@ -34,6 +34,12 @@ It is basically a SDK for creating VMs and etc on the fly but also has its drawb
     * [VPN Pricing](https://azure.microsoft.com/en-us/pricing/details/vpn-gateway/)
 
 
+### PowerShell
+* [Understanding important PowerShell concepts](https://docs.microsoft.com/en-us/powershell/scripting/learn/understanding-important-powershell-concepts?view=powershell-7)
+* [Advanced Tools & Scripting with PowerShell 3.0 Jump Start](https://channel9.msdn.com/Series/Advanced-Tools-and-Scripting-with-PowerShell-3.0-Jump-Start)
+
+
+
 
 ### Azure Stack ( I dont think we need this)
 
