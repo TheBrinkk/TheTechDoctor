@@ -17,6 +17,12 @@
 
 * [Tutorial: Create a custom image of an Azure VM with Azure PowerShell](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/tutorial-custom-images)
 
+* [Deploy Azure virtual machines from VHD templates](https://docs.microsoft.com/en-us/learn/modules/deploy-vms-from-vhd-templates/index)
+
+
+### Platform Maintenance
+[FAQ](https://docs.microsoft.com/en-us/azure/virtual-machines/maintenance-notifications?toc=/azure/virtual-machines/windows/toc.json&bc=/azure/virtual-machines/windows/breadcrumb/toc.json#faq)
+
 
 
 ## [Example Azure infrastructure walkthrough](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/infrastructure-example)

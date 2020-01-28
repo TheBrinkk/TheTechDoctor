@@ -29,19 +29,11 @@ With Azure, the Azure portal is used manually to create what you need. I am not 
 
 
 ## Azure PowerShell
-## [Azure PowerShell documentation](https://docs.microsoft.com/en-us/learn/modules/welcome-to-azure/6-exercise-cloud-shell)
-
-* [New-AzVM](https://docs.microsoft.com/en-us/powershell/module/Az.compute/new-Azvm?view=azps-3.3.0)
-* [New-AzResourceGroup](https://docs.microsoft.com/en-us/powershell/module/az.resources/new-azresourcegroup?view=azps-3.3.0)
-
-
+## [Azure PowerShell documentation](https://docs.microsoft.com/en-us/powershell/azure/?view=azps-3.3.0)
 
 ## [Azure Virtual Machine PowerShell samples](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/powershell-samples?toc=%2fpowershell%2fmodule%2ftoc.json)
 
 * [Create a fully configured virtual machine with PowerShell](https://docs.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-windows-powershell-sample-create-vm?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json)
-
-
-
 
 [Create a virtual machine Tutorial](https://docs.microsoft.com/en-us/powershell/azure/azureps-vm-tutorial?tutorial-step=4&view=azps-3.3.0)
 
@@ -65,8 +57,53 @@ $publicIp | Select-Object Name,IpAddress,@{label='FQDN';expression={$_.DnsSettin
 ```
 [PowerShell Tutorial Summary](https://docs.microsoft.com/en-us/powershell/azure/azureps-vm-tutorial?tutorial-step=8&view=azps-3.3.0)
 
+## Powershell cmdlets
+* [New-AzVM](https://docs.microsoft.com/en-us/powershell/module/Az.compute/new-Azvm?view=azps-3.3.0)
+* [New-AzResourceGroup](https://docs.microsoft.com/en-us/powershell/module/az.resources/new-azresourcegroup?view=azps-3.3.0)
 
+## Azure CLI
+## [Azure CLI Samples for Windows virtual machines](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/cli-samples)
 
+```bash
+#!/bin/bash
+
+# Update for your admin password
+AdminPassword=ChangeYourAdminPassword1
+
+# Create a resource group.
+az group create --name myResourceGroup --location westeurope
+
+# Create a virtual network.
+az network vnet create --resource-group myResourceGroup --name myVnet --subnet-name mySubnet
+
+# Create a public IP address.
+az network public-ip create --resource-group myResourceGroup --name myPublicIP
+
+# Create a network security group.
+az network nsg create --resource-group myResourceGroup --name myNetworkSecurityGroup
+
+# Create a virtual network card and associate with public IP address and NSG.
+az network nic create \
+  --resource-group myResourceGroup \
+  --name myNic \
+  --vnet-name myVnet \
+  --subnet mySubnet \
+  --network-security-group myNetworkSecurityGroup \
+  --public-ip-address myPublicIP
+
+# Create a virtual machine. 
+az vm create \
+    --resource-group myResourceGroup \
+    --name myVM \
+    --location westeurope \
+    --nics myNic \
+    --image win2016datacenter \
+    --admin-username azureuser \
+    --admin-password $AdminPassword
+
+# Open port 3389 to allow RDP traffic to host.
+az vm open-port --port 3389 --resource-group myResourceGroup --name myVM
+```
 
 ## General
 [Remote Desktop Web Client - Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-web-client)
